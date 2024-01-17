@@ -66,3 +66,48 @@ div {
     bottom: 50px;
     right: 50px;
 }
+
+/*************************************/
+
+.div_test {
+    width: 250px;
+    height: 250px;
+}
+
+.div_test > div {
+    width: 100%;
+    height: 50px;
+    border: 0;
+}
+
+div[class *= "child"] > div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+
+    float: left;
+}
+
+.div_first > div:first-child, .div_green > div:nth-child(2)  {
+    background-color: red;
+}
+
+.div_green > div:nth-child(3), .div_green2 > div:nth-child(2n) {
+    background-color: green;
+}
+​
+        /****************************************************************/
+​
+.table_test {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.tr_test > td:first-child, .tr_test3 > td:nth-child(2) {
+    background-color: red;
+}
+
+.tr_test2 > td:nth-child(3), .tr_test3 > td:nth-child(4), .tr_test3 > td:nth-child(2)  {
+    background-color: green;
+}​

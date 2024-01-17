@@ -1,0 +1,357 @@
+div{
+    border : 1px solid black;
+    box-sizing: border-box; 
+    /* content + padding + border 합으로 width/height 지정 */
+}
+
+.item{
+    width: 75px;
+    height: 75px;
+}
+
+.item1{background-color: red;}
+.item2{background-color: orangered;}
+.item3{background-color: orange;}
+.item4{background-color: yellow;}
+.item5{background-color: yellowgreen;}
+.item6{background-color: green;}
+.item7{background-color: lightblue;}
+.item8{background-color: blue;}
+.item9{background-color: violet;}
+
+.flex-container {
+    height: 700px;
+
+    /* 
+        item(내부요소)을 감싸는 요소의 형식을 flex 변경
+        -> item에 자동으로 지정된 margin 요소가 모두 사라지고
+        content 영역만큼의 크기만 가지게 됨 -> inline
+    */
+    display: flex;
+
+    /* flex-direction(부모 전용 속성) 
+        메인 축의 방향과 시작위치를 지정하는 속성
+    */
+
+    /* 행 방향(가로, 기본값) */
+    /* flex-direction: row; */
+
+    /* 행 방향(가로) + 순서 반대 */
+    /* flex-direction: row-reverse; */
+
+    /* 열 방향(세로) */
+    /* flex-direction: column; */
+
+    /* 열 방향(세로) + 순서 반대 */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap(부모 전용 속성)
+        내부 item들을 포장하는 속성
+        item들이 강제로 한줄에 배치되게 할지,
+        한줄을 벗어나 여러줄로 배치할 것인지 지정
+    */
+
+    /* item을 한줄로 배치(기본값) */
+    /* flex-wrap: nowrap; */
+
+    /* item을 여러줄로 배치 */
+    /* flex-wrap: wrap; */
+
+    /* item을 여러줄로 배치(뒤에서 배치) */
+    /* flex-wrap: wrap-reverse; */
+
+    /* justify-content
+        메인축 방향으로 item의 정렬 방법을 조정함
+    */
+
+    /* 메인축 방향으로 앞에서부터 정렬(기본값) */
+    /* justify-content: flex-start; */
+
+    /* 메인축 방향으로 뒤에 붙어서 정렬 */
+    /* justify-content: flex-end; */
+
+    /* 메인축 방향으로 가운데 정렬 */
+    /* justify-content: center; */
+
+    /* 
+        item 주위에 메인축 방향 양쪽으로 일정한 크기의 공간을 추가
+        -> 양끝은 조금, item 중간은 넓게 떨어져있음 
+        -> 브라우저 크기에 따라 변함
+     */
+    /* justify-content: space-around; */
+
+    /* item이 메인축 내에 동일한 간격을 가진다. */
+    /* justify-content: space-evenly; */
+
+    /* 양끝쪽을 붙인 상태에서 item들의 간격을 일정하게 정렬시킨다. */
+    /* justify-content: space-between; */
+
+    /* align-items 
+        item들을 교차축 방향으로 정렬하는 방법을 지정하는 속성
+    */
+
+    /* align-items: flex-start; */
+
+    /* align-items: flex-end; */
+
+    /* align-items: center; */
+}
+
+#con {
+    display: flex;
+    width: 450px;
+    height: 450px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#center {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+}
+
+/* item(자식)에게 주는 flex 속성 */
+/* order: 숫자; 
+    order: 0;(기본값)
+    순서가 작은 순서로 배치
+*/
+.basis-20 { 
+    flex-basis: 20%; 
+    order: 3;
+}
+
+.basis-30 { 
+    flex-basis: 30%;
+    order: 0; 
+}
+
+.basis-50 { 
+    flex-basis: 50%; 
+    order: -1;
+}
+
+
+
+/***********************************************/
+
+.flex-w {
+    width: 700px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-li1 {
+    background-color: lightslategray;
+    flex-basis: 20%;
+}
+
+.flex-li2 {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.flex-li2-1 {
+    background-color: lightskyblue;
+    flex-basis: 30%;
+}
+
+.flex-li2-2 {
+    background-color: lightcoral;
+    flex-basis: 50%;
+}
+
+.flex-li2-3 {
+    background-color: lightgoldenrodyellow;
+    flex-basis: 20%;
+}
+
+/*********************************/
+
+.con2-li1 {
+    background: lightcoral;
+    flex-basis: 20%;
+}
+
+.con2-li2 {
+    flex-basis: 80%;
+    display: flex;
+}
+
+.con2-li2-1 {
+    background-color: lightgoldenrodyellow;
+    flex-basis: 30%;
+}
+
+.con2-li2-2 {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con2-li2-2-1 {
+    background-color: lightgreen;
+    flex-basis: 80%;
+}
+
+.con2-li2-2-2 {
+    background-color: lightcyan;
+    flex-basis: 20%;
+}
+
+/*********************************/
+
+.con3-li1 {
+    background-color: lightgoldenrodyellow;
+    flex-basis: 30%;
+}
+
+.con3-li2 {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.con3-li2-1 {
+    background-color: lightcyan;
+    flex-basis: 30%;
+}
+
+.con3-li2-2 {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con3-li2-2-1 {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.con3-li2-2-2 {
+    background-color: lightcoral;
+    flex-basis: 50%;
+}
+
+.con3-li2-2-1-1 {
+    background-color: lightskyblue;
+    flex-basis: 70%;
+}
+
+.con3-li2-2-1-2 {
+    background-color: lightpink;
+    flex-basis: 30%;
+}
+
+/*********************************/
+
+.con4-li1 {
+    background-color: lightblue;
+    flex-basis: 20%;
+}
+
+.con4-li2 {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.con4-li2-1 {
+    background-color: lightskyblue;
+    flex-basis: 30%;
+}
+
+.con4-li2-2 {
+    background-color: lightsalmon;
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.con4-li2-2-1 {
+    width: 100px;
+    height: 100px;
+}
+
+/*********************************/
+
+.con5-li1 {
+    background-color: lightgoldenrodyellow;
+    flex-basis: 30%;
+
+    display: flex;
+}
+
+.con5-li2 {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.con5-li1-1 {
+    flex-basis: 20%;
+}
+
+.con5-li1-2 {
+    flex-basis: 40%;
+}
+
+.con5-li2-1 {
+    background-color: lightskyblue;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con5-li2-2, .con5-li2-4 {
+    background-color: lightpink;
+    flex-basis: 15%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.con5-li2-3 {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con5-li2-1-1 {
+    flex-basis: 35%;
+}
+
+.con5-li2-3-1 {
+    background-color: lightsalmon;
+    flex-basis: 50%;
+}
+
+.con5-li2-3-2 {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.con5-li2-4-1 {
+    flex-basis: 20%;
+}
+
+.con5-li2-4-2 {
+    flex-basis: 60%;
+}
+
+.con5-li2-3-2-1 {
+    background-color: lightseagreen;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.con5-li2-3-2-2 {
+    background-color: lightcoral;
+    flex-basis: 50%;
+}
+
+.con5-li2-3-2-1-1, .con5-li2-3-2-1-2 {
+    flex-basis: 50%;
+}
