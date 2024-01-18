@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_유튜브</title>
+
+    <link rel="stylesheet" href="css/youtube.css">
+    <script src="https://kit.fontawesome.com/247c6d7026.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <!-- 메뉴 -->
+            <section>
+                <button id="menu-btn" class="fa-solid fa-bars iconBtn"></button>
+            </section>
+
+            <!-- 로고 -->
+            <section>
+                <a href="#">
+                    <img src="../images/youtube_logo/yt_logo_rgb_light.png">
+                    <sup>KR</sup>
+                </a>
+            </section>
+        </section>
+
+        <section></section>
+
+        <!-- 검색 -->
+        <section>
+            <form action="#" name="search-form">
+                <fieldset>
+                    <input type="search" name="search-input" placeholder="검색" autocomplete="off">
+                    <button id="search-keyboard" class="fa-solid fa-keyboard"></button>
+                    <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                </fieldset>
+                <button  id="sound" class="fa-solid fa-microphone iconBtn"></button>
+            </form>
+        </section>
+
+        <section></section>
+
+
+        <!-- 기타/로그인버튼 -->
+        <section>
+            <button class="fa-solid fa-ellipsis-vertical"></button>
+            <button id="login-btn" class="fa-regular fa-circle-user"> 로그인</button>
+        </section>
+    </header>
+
+
+    <main>
+        <!-- 메인 -->
+        <section>
+            <!-- 동영상 -->
+            <section>
+                <iframe width="100vw" height="100vh" 
+                src="https://www.youtube.com/embed/vCaU7JuGMb0?si=-aIlcKysy6sNQ_eX" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+                </iframe>
+            </section>
+
+            <!-- 동영상제목 -->
+            <section>
+                <span id="youtube-title">💎저작권없는음악 팝송 유튜브브금 브이로그음악 무료BGM 배경음악(Again)</span>
+            </section>
+
+            <!-- 동영상 작성자 / 기타 버튼 -->
+            <section id="youtube-btn">
+                <section id="youtube-user">
+                    <button class="fa-solid fa-music iconBtn"></button>
+                    <section>
+                        <span>나눔뮤직 Nanum Sound</span>
+                        <span>구독자 2.14만명</span>
+                    </section>
+                    <button>구독</button>
+                </section>
+
+                <section></section>
+
+                <!-- 기타 버튼 -->
+                <section>
+                    <button class="fa-regular fa-thumbs-up"> &nbsp;좋아요</button>
+                    <button class="fa-regular fa-thumbs-down"></button>
+                    <button class="fa-solid fa-share iconBtn2"> &nbsp;공유</button>
+                    <button class="fa-solid fa-bars iconBtn2"> &nbsp;저장</button>
+                    <button class="fa-solid fa-ellipsis iconBtn"></button>
+                </section>
+            </section>
+            <section></section>
+            <section></section>
+        </section>
+
+        <section></section>
+    </main>
+</body>
+</html>
