@@ -189,5 +189,13 @@ function printJSObject() {
 
     const result = [value1, value2, value3];
 
+    const userInfo = {
+        이름 : value1,
+        나이 : value2,
+        성별 : value3
+    }
+
     console.log(result, typeof result);
+
+    console.log(userInfo, typeof userInfo);
 }
