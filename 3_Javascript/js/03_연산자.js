@@ -152,17 +152,6 @@ function check() {
 
     console.log("-----------------------------------------")
 
-    // let a = 10;
-    // let b = 5;
-    // let c = ++a * b--;
-
-    // // 최종적으로 a, b, c에 저장된 값은 얼마?
-    // // a == 11
-    // // b == 4
-    // // c == 55
-
-    // console.log(a, b, c);
-
     let a = 10;
     let b = 5;
     let c = ++a * b--;
