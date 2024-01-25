@@ -1,0 +1,12 @@
+#box {
+    width: 500px;
+    height: 500px;
+
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+img {
+    width: 50px;
+    /* position: relative; */
+}
