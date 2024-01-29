@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박은별 평가</title>
+
+    <link rel="stylesheet" href="../css/eunbyeol.css">
+</head>
+<body>
+    <div id="box">
+        <table id="tableTest">
+            <tr>
+                <th>너비 : </th>
+                <td id="n-width">
+                    <input value="200"><label> px</label>
+                </td>
+                <th>높이 : </th>
+                <td id="n-height">
+                    <input value="400"><label> px</label>
+                </td>
+            </tr>
+            <tr>
+                <th>글자크기 : </th>
+                <td id="f-size">
+                    <input value="20"><label> px</label>
+                </td>
+                <th>굵기 : </th>
+                <td>
+                    <label>
+                        <input type="radio" name="f-weight" value="normal">보통
+                    </label>
+                    <label>
+                        <input type="radio" name="f-weight" value="bold" checked>굵게
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>글자색 : </th>
+                <td><input id="t-color" value="red"></td>
+                <th>배경색 : </th>
+                <td><input id="b-color" value="yellow"></td>
+            </tr>
+            <tr>
+                <th>가로정렬 : </th>
+                <td colspan="3">
+                    <label>왼쪽
+                        <input type="radio" name="j-content" value="flex-start">
+                    </label>
+                    <label>가운데
+                        <input type="radio" name="j-content" value="center">
+                    </label>
+                    <label>오른쪽
+                        <input type="radio" name="j-content" value="flex-end" checked>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>세로정렬 : </th>
+                <td colspan="3">
+                    <label>위
+                        <input type="radio" name="al-items" value="flex-start">
+                    </label>
+                    <label>가운데
+                        <input type="radio" name="al-items" value="center" checked>
+                    </label>
+                    <label>아래
+                        <input type="radio" name="al-items" value="flex-end">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>출력 문자열 : </th>
+                <td colspan="3">
+                    <input id="hello-text" value="Hello World!">
+                </td>
+            </tr>
+        </table>
+        <div><button id="style-Save">적용하기</button></div>
+        <div id="content"></div>
+    </div>
+    
+    <script src="../js/eunbyeol.js"></script>
+</body>
+</html>
