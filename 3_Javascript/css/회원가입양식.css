@@ -1,0 +1,20 @@
+fieldset {
+    width: 450px;
+}
+
+table td {
+    padding: 5px 0;
+}
+
+#btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-box > button:first-child {
+    margin-right: 5px;
+}
+
+/* 일치여부 */
+.colorY { color: green; }
+.colorN { color: red; }

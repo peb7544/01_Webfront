@@ -5,24 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원 가입 양식</title>
 
-    <style>
-        fieldset {
-            width: 400px;
-        }
-
-        table td {
-            padding: 5px 0;
-        }
-
-        #btn-box {
-            display: flex;
-            justify-content: center;
-        }
-
-        #btn-box > button:first-child {
-            margin-right: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/회원가입양식.css">
 </head>
 <body>
     <!-- 
@@ -64,7 +47,7 @@
      -->
 
      <form action="#">
-        <fieldset>
+        <fieldset id="join-form">
             <legend>회원가입 양식</legend>
 
             <table>
@@ -79,9 +62,10 @@
                 </tr>
                 <tr>
                     <td>비밀번호</td>
-                    <td colspan="2">
+                    <td>
                         <input type="password" id="user-pw">
                     </td>
+                    <td><span class="pw-yn"></span></td>
                 </tr>
                 <tr>
                     <td>비밀번호확인</td>
@@ -91,9 +75,10 @@
                 </tr>
                 <tr>
                     <td>이름</td>
-                    <td colspan="2">
-                        <input>
+                    <td>
+                        <input id="user-nm">
                     </td>
+                    <td><span class="nm-yn"></span></td>
                 </tr>
                 <tr>
                     <td>성별</td>
@@ -109,7 +94,7 @@
                 <tr>
                     <td>전화번호</td>
                     <td colspan="2">
-                        <input type="tel">
+                        <input type="tel" id="tel">
                     </td>
                 </tr>
                 <tr>
@@ -121,8 +106,8 @@
             </table>
 
             <div id="btn-box">
-                <button type="button">초기화</button>
-                <button id="join">회원가입</button>
+                <button type="button" id="reset">초기화</button>
+                <button type="submit" id="join">회원가입</button>
             </div>
         </fieldset>
      </form>
