@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: ghostwhite; */
+}
+
+#box{
+    width: 1800px;
+    height: 800px;
+
+    margin: auto;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#rpg-content {
+    display: flex;
+    height: 700px;
+}
+
+#rpg-content > div {
+    margin-left: 20px;
+}
+
+#rpg-content > div:nth-child(1),
+#rpg-content > div:nth-child(2) {
+    flex-basis: 35%;
+    border-right: 1px solid #bbb;
+}
+
+#rpg-content > div:nth-child(3) {
+    flex-basis: 30%;
+}
+
+/* 버튼 */
+button {
+    background-color: #99d751;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 캐릭터 정보 */
+#character, #battle {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+
+    width: 600px;
+    height: 280px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+#info {
+    display: flex;
+}
+
+#info > div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+}
+
+/* 캐릭터 */
+img {
+    width: 120px;
+}
+
+
+/* 전투 시작 */
+#battle {
+    height: 200px;
+    overflow-y: auto;
+
+    display: block;
+}
+
+/* 상점 */
+#shop {
+    margin-bottom: 20px;
+}

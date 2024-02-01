@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_유튜브</title>
+
+    <link rel="stylesheet" href="css/youtube.css">
+    <script src="https://kit.fontawesome.com/247c6d7026.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <!-- 메뉴 -->
+            <section>
+                <button id="menu-btn" class="fa-solid fa-bars iconBtn"></button>
+            </section>
+
+            <!-- 로고 -->
+            <section>
+                <a href="#">
+                    <img src="../images/youtube_logo/yt_logo_rgb_light.png">
+                    <sup>KR</sup>
+                </a>
+            </section>
+        </section>
+
+        <section></section>
+
+        <!-- 검색 -->
+        <section>
+            <form action="#" name="search-form">
+                <fieldset>
+                    <input type="search" name="search-input" placeholder="검색" autocomplete="off">
+                    <button id="search-keyboard" class="fa-solid fa-keyboard"></button>
+                    <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                </fieldset>
+                <button  id="sound" class="fa-solid fa-microphone iconBtn"></button>
+            </form>
+        </section>
+
+        <section></section>
+
+
+        <!-- 기타/로그인버튼 -->
+        <section>
+            <button class="fa-solid fa-ellipsis-vertical"></button>
+            <button id="login-btn" class="fa-regular fa-circle-user"> 로그인</button>
+        </section>
+    </header>
+
+
+    <main>
+        <!-- 메인 -->
+        <section>
+            <!-- 동영상 --> <!--" -->
+            <section class="video-wrap">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/vCaU7JuGMb0?si=12GLG-0laG5-KBcE" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </section>
+
+            <!-- 동영상제목 -->
+            <section>
+                <span id="youtube-title">💎저작권없는음악 팝송 유튜브브금 브이로그음악 무료BGM 배경음악(Again)</span>
+            </section>
+
+            <!-- 동영상 작성자 / 기타 버튼 -->
+            <section id="youtube-btn">
+                <section id="youtube-user">
+                    <button class="fa-solid fa-music iconBtn"></button>
+                    <section>
+                        <span>나눔뮤직 Nanum Sound</span>
+                        <span>구독자 2.14만명</span>
+                    </section>
+                    <button>구독</button>
+                </section>
+
+                <section></section>
+
+                <!-- 기타 버튼 -->
+                <section id="etc-btn">
+                    <button class="fa-regular fa-thumbs-up"> &nbsp;좋아요</button>
+                    <span>|</span>
+                    <button class="fa-regular fa-thumbs-down"></button>
+                    <button class="fa-solid fa-share iconBtn2"> &nbsp;공유</button>
+                    <button class="fa-solid fa-bars iconBtn2"> &nbsp;저장</button>
+                    <button class="fa-solid fa-ellipsis iconBtn"></button>
+                </section>
+            </section>
+
+            <!-- 동영상 내용 -->
+            <section id="youtube-content">
+                <div>
+                    조회수 4.7만회  3년 전  #무료브금 #Nocopyrightmusic #저작권무료음악<br>
+                    안녕하세요 나눔입니다 <br>
+                    모든 음원을 무료로 다운로드 가능합니다 <br>
+                    네이버에서 더 많은 음원을 만나실 수 있습니다 … 더보기 <br>
+                </div>
+            </section>
+
+            <!-- 댓글 -->
+            <section id="comment">
+                <section id="comment-title">
+                    <span>댓글 136개</span>
+                    <button type="button" class="fa-solid fa-arrow-down-wide-short">정렬기준</button>
+                </section>
+
+                <section id="comment-add">
+                    <table border="1" id="comment-add">
+                        <tr>
+                            <td><button class="fa-solid fa-user iconBtn"></button></td>
+                            <td>
+                                <section></section>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><span id="hightlight">하이라이트 댓글</span></td>
+                        </tr>
+                        <tr>
+                            <td><button class="fa-solid fa-music iconBtn"></i></td>
+                            <td>
+                                <section class="comment-content">
+                                    <section class="comment-id">
+                                        <button>@tvtv-mz2fk</button>
+                                        <a href="#">9개월 전</a>
+                                    </section>
+                                    <section>
+                                        <span>나눔뮤직님 덕분에 유튜브 방송에 음원문제가 해결 되어 감사합니다🤩🤩</span>
+                                    </section>
+                                    <section>
+                                        <button class="fa-regular fa-thumbs-up iconBtn3"></button>
+                                        <button class="fa-regular fa-thumbs-down iconBtn3"></button>
+                                        <button class="comment-content2">답글</button>
+                                    </section>
+                                </section>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button class="fa-brands fa-superpowers iconBtn"></button></td>
+                            <td>
+                                <section class="comment-content">
+                                    <section class="comment-id">
+                                        <button>@user-zu2tl1rk9p</button>
+                                        <a href="#">2년 전(수정됨)</a>
+                                    </section>
+                                    <section>
+                                        <span>헐 노래 너무 좋아요! 노래 나눔 감사합니다.</span>
+                                    </section>
+                                    <section>
+                                        <button class="fa-regular fa-thumbs-up iconBtn3"> </button>
+                                        <span class="iconBtn3-1">2</span>
+                                        <button class="fa-regular fa-thumbs-down iconBtn3"></button>
+                                        <button class="comment-content2">답글</button>
+                                    </section>
+                                </section>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button class="fa-brands fa-pagelines iconBtn"></button></td>
+                            <td>
+                                <section class="comment-content">
+                                    <section class="comment-id">
+                                        <button>@user-lz9me5ir1c</button>
+                                        <a href="#">3년 전</a>
+                                    </section>
+                                    <section>
+                                        <span>나눔뮤직님의 음원 덕분에 제 게임코딩도 수월하게 잘되고 있어요, 정말 감사합니다! 나눔뮤직님은 정말 훌륭한 음원 나누미 셔요!</span>
+                                    </section>
+                                    <section>
+                                        <button class="fa-regular fa-thumbs-up iconBtn3"></button>
+                                        <button class="fa-regular fa-thumbs-down iconBtn3"></button>
+                                        <button class="comment-content2">답글</button>
+                                    </section>
+                                </section>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </section>
+
+        <section id="youtube-menu">
+            <section>
+                <button><img src="https://cdn.pixabay.com/photo/2016/11/30/14/08/cafe-1872888_1280.jpg"></button>
+                <section class="menu-content">
+                    <div>
+                        💓스타벅스 매장음악 ( 중간광
+                        고없음❗️) / Starbucks Jazz...
+                    </div>
+                    <div>MONKEY BGM</div>
+                    <div>조회수 555만회 • 1년전</div>
+                </section>
+            </section>
+            <section>
+                <button><img src="https://cdn.pixabay.com/photo/2023/12/05/08/14/woman-8431035_1280.jpg"></button>
+                <section class="menu-content">
+                    <div>
+                        ⚡플레이리스트⚡트렌디한 팝송 신나는 팝
+                        송 노래 저작권없...
+                    </div>
+                    <div>나눔뮤직 Nanum Sound</div>
+                    <div>조회수 25만회 • 4년전</div>
+                </section>
+            </section>
+            <section>
+                <button><img src="https://cdn.pixabay.com/photo/2016/02/10/21/57/heart-1192662_1280.jpg"></button>
+                <section class="menu-content">
+                    <div>
+                        Lovely Piece
+                    </div>
+                    <div>DayFox - Topic</div>
+                    <div>조회수 6.4만회 • 3년전</div>
+                </section>
+            </section>
+            <section>
+                <button><img src="https://cdn.pixabay.com/photo/2016/12/13/17/41/merry-go-round-1904715_1280.jpg"></button>
+                <section class="menu-content">
+                    <div>
+                        💎저작권없는음악 팝송 유튜브
+                        브금 무료음원 BGM 배경음악...
+                    </div>
+                    <div>나눔뮤직 Nanum Sound</div>
+                    <div>조회수 1.3만회 • 3년전</div>
+                </section>
+            </section>
+            <section>
+                <button><img src="https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_1280.jpg"></button>
+                <section class="menu-content">
+                    <div>
+                        [Playlist] 너무 좋은데... 괜찮으시
+                        겠어요?ㅣ지루한 일상, 가볍게...
+                    </div>
+                    <div>essential;</div>
+                    <div>조회수 205만회 • 2년전</div>
+                </section>
+            </section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </section>
+    </main>
+</body>
+</html>
